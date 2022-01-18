@@ -10,3 +10,15 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+button{
+    height:150px;
+    width:100%;
+    background-color: white !important;
+    border:1px solid rgb(221, 221, 221);
+}
+
+.goal{
+    border-top:10px solid red;
+    border-left:10px solid red;
+    border-right:10px solid red;
+}
