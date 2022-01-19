@@ -1,7 +1,7 @@
 import React from "react";
 
 let directions = ["TL", "TC", "TR", "ML", "MC", "MR", "BL", "BC", "BR"];
-let kickResult = "teste";
+let kickResult = "";
 
 function goalOrNot(direction) {
 	//alert(direction);
@@ -13,7 +13,8 @@ function goalOrNot(direction) {
 	} else {
 		kickResult = "DEFENSE!!!!!!";
 	}
-	alert(kickResult);
+	//alert(kickResult);
+	document.getElementById("resultDiv").innerHTML = kickResult;
 }
 
 const Penalty = () => {
@@ -58,7 +59,7 @@ const Penalty = () => {
 				</div>
 			</div>
 			<div>
-				<div>{kickResult}</div>
+				<div id="resultDiv">{kickResult}</div>
 			</div>
 		</>
 	);
